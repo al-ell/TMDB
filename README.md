@@ -1,18 +1,16 @@
 # Milestone 2
 
-![]()
+![lorem](lkjljl)
 
-![]()
+![lorem](kjjklj)
 
-
-Link to deployed site: []()
+Link to deployed site: [lorem](kjljl)
 
 ![GitHub last commit]()
 
-
 ## CONTENTS
 
-- []()
+- [CINIkids](kjljk)
   - [CONTENTS](#contents)
   - [User Experience](#user-experience)
     - [Project Goals](#project-goals)
@@ -62,55 +60,56 @@ Link to deployed site: []()
 
 #### __Target Audience__
 
-
 #### __First Time Visitor Goals__
-
-
 
 #### __Returning Visitor Goals__
 
-
-
 #### __Admin User__
-
-
 
 ## Design
 
 ### Colour Scheme
 
+![color scheme](/assets/documentation/styling/color-pallete.png)
+careated using [Coolors](https://coolors.co/) color pallete generator.
 
+I have chosen the red, yellow and green to represent the films ratings. They will colour code the movie cards.
 
 ### Typography
 
+I have chosen child friendly Google Fonts for the logo, headings/movie titles and paragraphs.
+
+##### Logo
+
+![kalam](/assets/documentation/styling/kalam.png)
+
+#### Headings
+
+![itim](/assets/documentation/styling/itim.png)
+
+##### Paragraphs
+
+![Wireframes](/assets/documentation/styling/delius.png)
 
 ### Imagery
 
+Favicon.
 
 ### Wireframes
 
+Wireframes for different screen sizes created using Balsamiq.
 
+![Wireframes](/assets/documentation/styling/color-pallete.png)
 
 ### User Journey
 
-
-
 ## Features
-
 
 ### Elements found on each page
 
-
-
-
 ### Future Implementations
 
-
-
-
 ### Accessibility
-
-
 
 ## Technologies Used
 
@@ -120,39 +119,23 @@ HTML, CSS, Javascript
 
 ### Frameworks Used
 
-
-
 ### Libraries & Packages Used
-
-
 
 ### Programs Used
 
-
 ### API
 
-
-
-
-
 ### Error Handling
-
-
 
 ## Deployment & Local Development
 
 ### Deployment
 
-
 ### Local Development
 
 #### How to Fork
 
-
-
 #### How to Clone
-
-
 
 ## Testing
 
@@ -163,14 +146,8 @@ Please see [TESTING.md](TESTING.md) for all testing performed
 
 ### Code Used
 
-
-
 ### Content
 
-
-### Media
-
-
+## Media
 
 ### Acknowledgments
-
