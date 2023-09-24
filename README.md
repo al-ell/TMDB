@@ -24,7 +24,6 @@ Link to deployed site: [lorem](kjljl)
     - [Typography](#typography)
     - [Imagery](#imagery)
     - [Wireframes](#wireframes)
-    - [User Journey](#user-journey)
   - [Features](#features)
     - [Elements found on each page](#elements-found-on-each-page)
     - [Future Implementations](#future-implementations)
@@ -54,17 +53,51 @@ Link to deployed site: [lorem](kjljl)
 
 ### Project Goals
 
-
+Children's safety on the internet is a current concern as adult content is rarely filtered out. I want to create a website that will filter out any innapropriate content. I will create a space children to safely choose family friendly films.
 
 ### User Stories
 
 #### __Target Audience__
 
+The target audience for the website are children (and their families) with access to streaming services at home.
+
 #### __First Time Visitor Goals__
+
+As a first time user of the site I want to:
+
+- Browse new and popular films
+- Browse diffferent film catagories
+- Search for a specific film
+- Know how highly rated a film is
+- See for a summary about the film
 
 #### __Returning Visitor Goals__
 
+As a Returning visitor I want to:
+
+- All first time user goals  
+- See what's new since I last looked for a film to watch
+
 #### __Admin User__
+
+As an administrator for the site I want to:
+
+- Provide a safe website for children to choose films
+- Show clear and easy to follow information to allow independent use
+- Maintain the API connection to allow full functionality
+- Be able to update the features with ease
+
+#### __Future Releases__
+
+##### Users
+
+- Create an account
+- See a list of my "to watch"/favourite films
+- Watch the trailer
+- See where I can stream the films online
+- Filter films by different age groups/parental lock feature
+
+- - -
 
 ## Design
 
@@ -101,7 +134,7 @@ Wireframes for different screen sizes created using Balsamiq.
 
 ![Wireframes](/assets/documentation/styling/color-pallete.png)
 
-### User Journey
+- - -
 
 ## Features
 
@@ -137,6 +170,8 @@ HTML, CSS, Javascript
 
 #### How to Clone
 
+- - -
+
 ## Testing
 
 Please see [TESTING.md](TESTING.md) for all testing performed
@@ -147,6 +182,8 @@ Please see [TESTING.md](TESTING.md) for all testing performed
 ### Code Used
 
 ### Content
+
+- - -
 
 ## Media
 
