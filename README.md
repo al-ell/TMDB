@@ -87,16 +87,6 @@ As an administrator for the site I want to:
 - Maintain the API connection to allow full functionality
 - Be able to update the features with ease
 
-#### __Future Releases__
-
-##### Users
-
-- Create an account
-- See a list of my "to watch"/favourite films
-- Watch the trailer
-- See where I can stream the films online
-- Filter films by different age groups/parental lock feature
-
 - - -
 
 ## Design
@@ -138,9 +128,27 @@ Wireframes for different screen sizes created using Balsamiq.
 
 ## Features
 
+The website is comprised of 2 pages:
+
+- Index page
+- Contact form page
+  
 ### Elements found on each page
 
+- Navbar/Burger icon
+- Search bar
+- Genre buttons
+- Footer
+
 ### Future Implementations
+
+Possible future updates can include:
+
+- Create an account
+- See a list of my "to watch"/favourite films
+- Watch the trailer
+- See where I can stream the films online
+- Filter films by different age groups/parental lock feature
 
 ### Accessibility
 
@@ -148,27 +156,78 @@ Wireframes for different screen sizes created using Balsamiq.
 
 ### Languages Used
 
-HTML, CSS, Javascript
+HTML, CSS, Javascript.
 
 ### Frameworks Used
 
+- [Bootstrap v5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- [EmailJS](https://www.emailjs.com/)
+- [JQuery](https://jquery.com/)
+
 ### Libraries & Packages Used
+
+[Codeanywhere] - Online code editor.
+
+[Balsamiq](https://balsamiq.com/) - Used to create wireframes.
+
+[Github](https://github.com/) - To save and store the files for the website.
+
+[Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
+
+[Font Awesome](https://fontawesome.com/)  - For the icons on the website.
+
+[Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - To troubleshoot and test features, solve issues with responsiveness, functionality and styling.
+
+[Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
 
 ### Programs Used
 
 ### API
 
+[The Movies DB API](https://developer.themoviedb.org/reference/intro/getting-started)
+is used throughout the project to gain information displayed to the website user.
+
 ### Error Handling
+
+- - -
 
 ## Deployment & Local Development
 
 ### Deployment
 
+The project was developed using Codeanywhere cloud IDE and pushed to GitHub using the inbuilt command line. To deploy to GitHub Pages from the [Github repository](...) follow these steps:
+
+1. Log in to [GitHub]....)
+2. Go to the [repository page](...)
+3. Change the name of the respository to "username.github.io" : al-ell.github.io
+4. From the menu above the repository menu select __settings__
+5. On the left select __pages__
+6. Under __source__ select __deploy from a branch__
+7. Go to "username.github.io" : al-ell.github.io
+
 ### Local Development
 
 #### How to Fork
 
+1. On GitHub.com, navigate to the octocat/Spoon-Knife repository
+2. In the top-right corner of the page, click __Fork__
+3. Under "Owner," select the dropdown menu and click an owner for the forked repository
+4. By default, forks are named the same as their upstream repositories. Optionally, to further distinguish your fork, in the "Repository name" field, type a name
+5. Optionally, in the "Description" field, type a description of your fork
+6. Optionally, select __Copy the DEFAULT branch only__
+7. Click __Create fork__
+
 #### How to Clone
+
+1. On GitHub.com, navigate to the main page of the repository
+    2. Above the list of files, click __<> Code__
+    3. Copy the URL for the repository
+        *To clone the repository using HTTPS, under "HTTPS", click __clipboard icon__
+        * To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click SSH, then click __clipboard icon__
+        * To clone a repository using GitHub CLI, click GitHub CLI, then click __copy icon__
+    4. Open Terminal, change the current working directory to the location where you want the cloned directory
+    5. Type 'git clone', and then paste the URL copied earlier
+    6. Press __Enter__ to create your local clone
 
 - - -
 
@@ -180,6 +239,8 @@ Please see [TESTING.md](TESTING.md) for all testing performed
 ## Credits
 
 ### Code Used
+
+The initial tutorial/walkthrough I followed to get the Movies API working are videos 52 - 55: [50 Projects In 50 Days HTML, CSS & Java Script](https://archive.org/details/50-projects-in-50-days-html-css-java-script_202207/18+Day+17+-+Movie+App/053+Project+Intro.mp4). I worked on this project in Visual Studio Code which I saved locally. I have pasted in and credited any code copied into this project.
 
 ### Content
 
