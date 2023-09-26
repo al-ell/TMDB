@@ -1,0 +1,117 @@
+ 
+/*  for movie cards
+
+{
+    background-color: #82b0d9;
+
+} */
+
+nav-container,
+main,
+header,
+footer {
+    background-color: rgba(202, 83, 147, 0.5);
+}
+
+/* Special Margins & Paddings */
+
+* {
+    box-sizing: border-box;
+}
+
+.nav-container
+.logo-container,
+header,
+body {
+    margin: 0;
+}
+
+/* Header */
+
+
+#logo {
+    font-family: Kalam, sans-serif;
+    font-weight: 700;
+    font-size: 12vh;
+    letter-spacing: 2px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#logo1 {
+    color: #e84855;
+}
+
+#logo2 {
+    color: #729c44;
+}
+
+.search-bar {
+    padding: 3px
+}
+
+.nav-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nav-button,
+.search-bar {
+    display: flex;
+}
+
+/* Footer */
+
+footer {
+    height: 5vh;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-container {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.social-icon {
+    display: flex;
+}
+
+/* Taken from Milestone 1 */
+.social-links li {
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links li a i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(202, 83, 147, 0.5);
+    background-color: #82b0d9;
+    /*flex added to links themselves, from tutor support*/
+    /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* From Resume project */
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
