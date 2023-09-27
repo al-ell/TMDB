@@ -1,117 +1,135 @@
- 
-/*  for movie cards
+ /*  for movie cards
 
 {
     background-color: #82b0d9;
 
 } */
 
-nav-container,
-main,
-header,
-footer {
-    background-color: rgba(202, 83, 147, 0.5);
+ nav-container,
+ main,
+ header,
+ footer {
+     background-color: rgba(202, 83, 147, 0.5);
+ }
+
+ /* Special Margins & Paddings */
+
+ * {
+     box-sizing: border-box;
+ }
+
+ .nav-container .logo-container,
+ header,
+ body {
+     margin: 0;
+ }
+
+ /* Header */
+
+
+ .logo-container {
+     display: flex;
+     justify-content: center;
+     align-content: center;
+ }
+
+ #logo {
+     font-family: Kalam, sans-serif;
+     font-weight: 700;
+     font-size: 12vh;
+     letter-spacing: 2px;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     padding: 5px;
+ }
+
+ #logo1 {
+     color: #e84855;
+ }
+
+ #logo2 {
+     color: #729c44;
+ }
+
+ .search-bar {
+     padding: 5px 10px 0 0;
+     font-size: 18px;
+ }
+
+.submit-btn {
+    text-transform: uppercase;
 }
 
-/* Special Margins & Paddings */
+ .search-input {
+     min-width: 20px;
+     text-transform: uppercase;
+ }
 
-* {
-    box-sizing: border-box;
-}
+ .nav-container {
+     display: contents;
+     flex-wrap: nowrap;
+     justify-content: space-between;
+     text-transform: uppercase;
+     font-family: itim, sans-serif;
+     font-size: 20px;
+ }
 
-.nav-container
-.logo-container,
-header,
-body {
-    margin: 0;
-}
+ .nav-button,
+ .search-bar {
+     display: flex;
+ }
 
-/* Header */
+ /* Footer */
 
+ footer {
+     height: 7vh;
+     margin: 0;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
 
-#logo {
-    font-family: Kalam, sans-serif;
-    font-weight: 700;
-    font-size: 12vh;
-    letter-spacing: 2px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-}
+ .social-container {
+     display: flex;
+ }
 
-#logo1 {
-    color: #e84855;
-}
+ .social-icon {
+     display: flex;
+ }
 
-#logo2 {
-    color: #729c44;
-}
+ /* Taken from Milestone 1 */
+ .social-links li {
+     text-align: center;
+     padding: 1rem;
 
-.search-bar {
-    padding: 3px
-}
+ }
 
-.nav-container {
-    display: flex;
-    flex-wrap: nowrap;
-}
+ .social-links li a i {
+     width: 35px;
+     height: 35px;
+     border-radius: 50%;
+     font-size: 20px;
+     line-height: 6px;
+     color: rgba(202, 83, 147, 0.5);
+     background-color: #82b0d9;
+     /*flex added to links themselves, from tutor support*/
+     /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: nowrap;
+     /* From Resume project */
+     transition: all 0.35s ease-in-out;
+     -moz-transition: all 0.35s ease-in-out;
+     -webkit-transition: all 0.35s ease-in-out;
+     -o-transition: all 0.35s ease-in-out;
+ }
 
-.nav-button,
-.search-bar {
-    display: flex;
-}
-
-/* Footer */
-
-footer {
-    height: 5vh;
-    margin: 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.social-container {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-}
-
-.social-icon {
-    display: flex;
-}
-
-/* Taken from Milestone 1 */
-.social-links li {
-    text-align: center;
-    text-decoration: none;
-    padding: 1rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.social-links li a i {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 20px;
-    color: rgba(202, 83, 147, 0.5);
-    background-color: #82b0d9;
-    /*flex added to links themselves, from tutor support*/
-    /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    /* From Resume project */
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
+ .social-links li a i:hover {
+     color: #82b0d9;
+     background-color: rgba(202, 83, 147, 0.5);
+ }

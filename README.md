@@ -104,15 +104,18 @@ I have chosen child friendly Google Fonts for the logo, headings/movie titles an
 
 ##### Logo
 
+Kalam:
 ![kalam](/assets/documentation/styling/kalam.png)
 
 #### Headings
 
+Itim:
 ![itim](/assets/documentation/styling/itim.png)
 
 ##### Paragraphs
 
-![Wireframes](/assets/documentation/styling/delius.png)
+Delius:
+![delius](/assets/documentation/styling/delius.png)
 
 ### Imagery
 
