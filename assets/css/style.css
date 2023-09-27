@@ -12,6 +12,10 @@
      background-color: rgba(202, 83, 147, 0.5);
  }
 
+footer {
+    background-color: rgba(202, 83, 147, 1);
+}
+
  /* Special Margins & Paddings */
 
  * {
