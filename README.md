@@ -190,6 +190,14 @@ HTML, CSS, Javascript.
 [The Movies DB API](https://developer.themoviedb.org/reference/intro/getting-started)
 is used throughout the project to gain information displayed to the website user.
 
+[To find the genre codes](<https://developer.themoviedb.org/reference/genre-movie-list>)
+This allowd me to find the correct genre number to filter family films.
+
+[TMDB advanced filtering](https://developer.themoviedb.org/reference/discover-movie) -
+Allows experiments with genre, classification and language options for homepage results.
+
+[To filter search results](https://developer.themoviedb.org/reference/search-movie)
+
 ### Error Handling
 
 - - -
@@ -243,7 +251,15 @@ Please see [TESTING.md](TESTING.md) for all testing performed
 
 ### Code Used
 
-The initial tutorial/walkthrough I followed to get the Movies API working are videos 52 - 55: [50 Projects In 50 Days HTML, CSS & Java Script](https://archive.org/details/50-projects-in-50-days-html-css-java-script_202207/18+Day+17+-+Movie+App/053+Project+Intro.mp4). I worked on this project in Visual Studio Code which I saved locally. I have pasted in and credited any code copied into this project.
+The initial tutorial/walkthrough I followed to get the Movies API working are videos 52 - 55 (transcribed - no source code used): [50 Projects In 50 Days HTML, CSS & Java Script](https://archive.org/details/50-projects-in-50-days-html-css-java-script_202207/18+Day+17+-+Movie+App/053+Project+Intro.mp4). I worked on this project in Visual Studio Code which I saved locally. I have pasted in and credited any code copied into this project.
+
+An updated genre url: [Finding genres](https://teamtreehouse.com/community/deserialization-on-tmdb-api). Prior to finding this way of filtering genre ids I was getting some results that were not family films.
+
+TMDB API forum discussion : [How to make a http request to show the genres of a specific movie](https://www.themoviedb.org/talk/56183386c3a3682441000486)
+
+Alternate video tutorial (with source code): [Movie Data with TMDB API - HTML, CSS & JAVASCRIPT(BASIC)](https://www.youtube.com/watch?v=DP8uNVVSkYo)
+
+Alternate walkthrough (with source code): [Mastering API Fetch: How to Build a Movie Website with Real-Time Data Updates](https://tracychan7.hashnode.dev/mastering-api-fetch-how-to-build-a-movie-website-with-real-time-data-updates)
 
 ### Content
 
