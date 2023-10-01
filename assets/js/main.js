@@ -4,7 +4,11 @@
 
 // home page end point:
 // API url update to return aminated films: https://www.themoviedb.org/talk/60114a2cdd83fa003f99bcfb 
-const apiUrl = 'https://api.themoviedb.org/3/discover/movie?certification_country=US&certification.lte=G&with_genres=10751&include_adult=false&sort_by=popularity.desc&api_key=2fcc9b1d9695840cb0066635e69b01b2&page=1/';
+// const apiUrl = 'https://api.themoviedb.org/3/discover/movie?certification_country=US&certification.lte=G&with_genres=10751&include_adult=false&sort_by=popularity.desc&api_key=2fcc9b1d9695840cb0066635e69b01b2&page=1/';
+
+// Home page end point: 
+// url adapted from "https://teamtreehouse.com/community/deserialization-on-tmdb-api"
+const apiUrl = 'https://api.themoviedb.org/3/genre/10751/movies?api_key=2fcc9b1d9695840cb0066635e69b01b2&language=en&include_adult=false&sort_by=popularity.desc'
 // Movie poster file path:
 const imgPath = 'https://image.tmdb.org/t/p/w1280';
 // Search bar endpoint:
