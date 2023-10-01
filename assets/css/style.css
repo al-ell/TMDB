@@ -57,7 +57,7 @@ footer {
      color: #729c44;
  }
 
- .search-bar {
+ .form {
      padding: 5px 10px 0 0;
      font-size: 18px;
  }
@@ -75,7 +75,7 @@ footer {
      font-size: 18px;
  }
 
- .search-input {
+ .search {
      min-width: 20px;
      text-transform: uppercase;
      font-size: 18px;
@@ -91,7 +91,7 @@ footer {
  }
 
  .nav-button,
- .search-bar {
+ .form {
      display: flex;
  }
 
