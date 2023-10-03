@@ -6,15 +6,15 @@
 } */
 
  nav-container,
+ body,
  main,
- header,
- footer {
+ header {
      background-color: rgba(202, 83, 147, 0.5);
  }
 
-footer {
-    background-color: rgba(202, 83, 147, 1);
-}
+ footer {
+     background-color: rgba(202, 83, 147, 1);
+ }
 
  /* Special Margins & Paddings */
 
@@ -25,7 +25,8 @@ footer {
  .nav-container,
  .logo-container,
  header,
- body {
+ body,
+ #tags {
      margin: 0;
  }
 
@@ -62,12 +63,6 @@ footer {
      font-size: 18px;
  }
 
- .genre-btn {
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
-
  .genre-btn,
  .submit-btn {
      text-transform: uppercase;
@@ -97,10 +92,9 @@ footer {
 
  /* From Video Tutorial: https: //archive.org/details/50-projects-in-50-days-html-css-java-script_202207/18+Day+17+-+Movie+App/054+Movies+UI+Layout.mp4
 Videos 53 - 56
-
 Body - Movie Cards */
 
- main {
+ .main {
      display: flex;
      flex-wrap: wrap;
  }
@@ -180,6 +174,24 @@ Body - Movie Cards */
  .movie:hover .overview {
      transform: translateY(0);
  }
+
+ /* Genre Button styling. Adapted from video tutorial: */
+
+ #tags {
+     padding: 10px 20px;
+     margin: 5px;
+     display: inline;
+ }
+
+ .tag {
+     background-color: transparent;
+     border: 2px solid black;
+ }
+
+ .tag.highlight {
+     background-color: #82b0d9;
+ }
+
 
  /* Footer */
 
