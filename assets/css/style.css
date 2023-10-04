@@ -5,6 +5,7 @@
 
 } */
 
+ .tag,
  nav-container,
  body,
  main,
@@ -63,7 +64,6 @@
      font-size: 18px;
  }
 
- .genre-btn,
  .submit-btn {
      text-transform: uppercase;
      font-family: itim, sans-serif;
@@ -175,17 +175,32 @@ Body - Movie Cards */
      transform: translateY(0);
  }
 
+ .no-result {
+     text-transform: uppercase;
+     font-family: itim, sans-serif;
+     font-size: 26px;
+ }
+
  /* Genre Button styling. Adapted from video tutorial: */
 
  #tags {
-     padding: 10px 20px;
-     margin: 5px;
-     display: inline;
+     width: 80%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     margin: 10px auto;
  }
 
  .tag {
-     background-color: transparent;
-     border: 2px solid black;
+     padding: 10px 20px;
+     border-radius: 50px;
+     margin: 5px;
+     display: inline-block;
+     text-transform: uppercase;
+     font-family: itim, sans-serif;
+     font-size: 18px;
+     border: 1px solid black;
  }
 
  .tag.highlight {

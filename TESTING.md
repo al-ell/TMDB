@@ -63,13 +63,13 @@ Visit the deployed site: [CINIkids](#)
 
 ### WAVE Testing
 
-__Wave Initial Results__
+Wave Initial Results
 
 [WAVE](http://wave.webaim.org/) (Web Accessibility Evaluation Tool)
 
 ![Initial result](#)
 
-__Wave Final Results__
+Wave Final Results
 
 ![Wave contrast editor 1](#)
 
