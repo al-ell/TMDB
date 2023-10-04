@@ -118,12 +118,22 @@ Each device tested the site using the following browsers:
 
 | `Contact Page`          |
 
-| `Contact Form Modal` |
-
 | `Accessability` |
 
 ![amiresponsive result](#)
 
+---
+
+## JAVASCRIPT TESTING
+
+### Manual Testing
+
+| Feature | Testing | Image |
+|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------| 
+| Movie results on homepage | Use of <code>console.log(data.results)</code> to show results prior to adding to DOM | <img src="/assets/documentation/javascriptTesting/testingInitialResults.png" alt="console log screenhot" width="50px"> |
+| Testing looping through the genre | Visibility of all genre buttons | <img src="/assets/documentation/javascriptTesting/testingLoopThroughGenre.png" alt="genre buttons on display" width="50px"> |
+| Genre buttons | clicking on buttons to check it links to genre id array | <img src="/assets/documentation/javascriptTesting/testingClickOnGenre.png" alt="console log with id displayed" width="50px"> |
+| Testing missing poster | searched for a movie with a missing poster | <img src="/assets/documentation/javascriptTesting/testingMissingPoster.png" alt="cinema seats in place of broken link" width="50px"> |
 ---
 
 ## BUGS

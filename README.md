@@ -257,6 +257,10 @@ An updated genre url: [Finding genres](https://teamtreehouse.com/community/deser
 
 TMDB API forum discussion : [How to make a http request to show the genres of a specific movie](https://www.themoviedb.org/talk/56183386c3a3682441000486)
 
+Adding Genre buttons to home page : [Tutorial to following initial walthrough videos](https://www.youtube.com/watch?v=_KzimS9fcM0)
+
+
+Found but not used:
 Alternate video tutorial (with source code): [Movie Data with TMDB API - HTML, CSS & JAVASCRIPT(BASIC)](https://www.youtube.com/watch?v=DP8uNVVSkYo)
 
 Alternate walkthrough (with source code): [Mastering API Fetch: How to Build a Movie Website with Real-Time Data Updates](https://tracychan7.hashnode.dev/mastering-api-fetch-how-to-build-a-movie-website-with-real-time-data-updates)
@@ -266,5 +270,9 @@ Alternate walkthrough (with source code): [Mastering API Fetch: How to Build a M
 - - -
 
 ## Media
+
+I generated an image using Bing's AI image generator to create an image to show if the API movie poster path url is corrupted:
+[Missing Poster Path](/assets/images/missing-poster.webp)
+[Bing AI Image Generator](https://www.bing.com/images/create/colorful-empty-cinema-seats/651d1dcf888c424e92965be53f0bfdb4?FORM=GUH2CR)
 
 ### Acknowledgments
