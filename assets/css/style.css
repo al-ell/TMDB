@@ -7,15 +7,17 @@
 
 .contact-main,
 .tag,
-nav-container,
+
 body,
-main,
-header {
-    background-color: rgba(202, 83, 147, 0.5);
+main {
+    background-color: #765674;
 }
 
+#logo,
+header,
+nav-container,
 footer {
-    background-color: rgba(202, 83, 147, 1);
+    background-color: #D0D8DC;
 }
 
 /* Special Margins & Paddings */
@@ -43,6 +45,8 @@ body,
     display: flex;
     justify-content: center;
     align-content: center;
+    padding-bottom: 10px;
+    padding-top: 0;
 }
 
 #logo {
@@ -58,11 +62,11 @@ body,
 }
 
 #logo1 {
-    color: #e84855;
+    color: #DA1B2B;
 }
 
 #logo2 {
-    color: #729c44;
+    color: #5D8038;
 }
 
 .form {
@@ -109,7 +113,7 @@ Body - Movie Cards */
 .movie {
     width: 300px;
     margin: 1rem;
-    background-color: #82b0d9;
+    background-color: #8ECCB1;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
@@ -146,7 +150,7 @@ Body - Movie Cards */
 }
 
 .movie-info span {
-    background-color: #e0e0e0;
+    background-color: #d0d8dc;
     padding: 0.25rem 0.5rem;
     border-radius: 10px;
     font-size: 22px;
@@ -155,7 +159,7 @@ Body - Movie Cards */
 }
 
 .movie-info span.green {
-    color: #729c44;
+    color: #5D8038;
 }
 
 .movie-info span.orange {
@@ -163,11 +167,11 @@ Body - Movie Cards */
 }
 
 .movie-info span.red {
-    color: #e84855;
+    color: #DA1B2B;
 }
 
 .overview {
-    background-color: #82b0d9;
+    background-color: #8ECCB1;
     padding: 2rem;
     position: absolute;
     top: 0;
@@ -197,6 +201,7 @@ Body - Movie Cards */
     justify-content: center;
     align-items: center;
     margin: 10px auto;
+    padding-top: 10px;
 }
 
 .tag {
@@ -207,11 +212,12 @@ Body - Movie Cards */
     text-transform: uppercase;
     font-family: itim, sans-serif;
     font-size: 16px;
+    background-color: #8ECCB1;
     border: 1px solid black;
 }
 
 .tag.highlight {
-    background-color: #82b0d9;
+    background-color: #D0D8DC;
 }
 
 /* Footer */
@@ -247,8 +253,8 @@ footer {
     border-radius: 50%;
     font-size: 20px;
     line-height: 6px;
-    color: rgba(202, 83, 147, 0.5);
-    background-color: #82b0d9;
+    color: #765674;
+    background-color: #8ECCB1;
     /*flex added to links themselves, from tutor support*/
     /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
     display: flex;
@@ -263,8 +269,8 @@ footer {
 }
 
 .social-links li a i:hover {
-    color: #82b0d9;
-    background-color: rgba(202, 83, 147, 0.5);
+    color: #D0D8DC;
+    background-color: #765674;
 }
 
 /* Contact Form */

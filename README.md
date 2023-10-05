@@ -93,10 +93,12 @@ As an administrator for the site I want to:
 
 ### Colour Scheme
 
-![color scheme](/assets/documentation/styling/color-pallete.png)
+![color scheme](/assets/documentation/styling/cinikids-pallete.png)
 careated using [Coolors](https://coolors.co/) color pallete generator.
 
-I have chosen the red, yellow and green to represent the films ratings. They will colour code the movie cards.
+I have chosen the red, yellow and green to represent the films ratings. They will colour code the movie cards to show the ratings. 
+
+I have attempted to make the website gender neutral.
 
 ### Typography
 
