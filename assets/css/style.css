@@ -1,266 +1,305 @@
- /*  for movie cards
+/*  for movie cards
 
 {
     background-color: #82b0d9;
 
 } */
 
- .tag,
- nav-container,
- body,
- main,
- header {
-     background-color: rgba(202, 83, 147, 0.5);
- }
+.contact-main,
+.tag,
+nav-container,
+body,
+main,
+header {
+    background-color: rgba(202, 83, 147, 0.5);
+}
 
- footer {
-     background-color: rgba(202, 83, 147, 1);
- }
+footer {
+    background-color: rgba(202, 83, 147, 1);
+}
 
- /* Special Margins & Paddings */
+/* Special Margins & Paddings */
 
- * {
-     box-sizing: border-box;
- }
+* {
+    box-sizing: border-box;
+}
 
- .nav-container,
- .logo-container,
- header,
- body,
- #tags {
-     margin: 0;
- }
+.contact-main,
+.nav-container,
+.logo-container,
+header,
+body,
+#tags {
+    margin: 0;
+}
 
+/* Header */
 
- /* Header */
+.nav-container {
+    height: 10vh;
+}
 
- .logo-container {
-     display: flex;
-     justify-content: center;
-     align-content: center;
- }
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
- #logo {
-     font-family: Kalam, sans-serif;
-     font-weight: 700;
-     font-size: 12vh;
-     letter-spacing: 2px;
-     text-align: center;
-     align-items: center;
-     justify-content: center;
-     padding: 5px;
- }
+#logo {
+    font-family: Kalam, sans-serif;
+    font-weight: 700;
+    font-size: 12vh;
+    letter-spacing: 2px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    height: 10vh;
+}
 
- #logo1 {
-     color: #e84855;
- }
+#logo1 {
+    color: #e84855;
+}
 
- #logo2 {
-     color: #729c44;
- }
+#logo2 {
+    color: #729c44;
+}
 
- .form {
-     padding: 5px 10px 0 0;
-     font-size: 18px;
- }
+.form {
+    padding: 5px 10px 0 0;
+    font-size: 18px;
+}
 
- .submit-btn {
-     text-transform: uppercase;
-     font-family: itim, sans-serif;
-     font-size: 18px;
- }
+.submit-btn {
+    text-transform: uppercase;
+    font-family: itim, sans-serif;
+    font-size: 18px;
+}
 
- .search {
-     min-width: 20px;
-     text-transform: uppercase;
-     font-size: 18px;
- }
+.search {
+    min-width: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
 
- .nav-container {
-     display: contents;
-     flex-wrap: nowrap;
-     justify-content: center;
-     text-transform: uppercase;
-     font-family: itim, sans-serif;
-     font-size: 20px;
- }
+.nav-container {
+    display: contents;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: itim, sans-serif;
+    font-size: 20px;
+}
 
- .nav-button,
- .form {
-     display: flex;
- }
+.nav-button,
+.form {
+    display: flex;
+}
 
- /* From Video Tutorial: https: //archive.org/details/50-projects-in-50-days-html-css-java-script_202207/18+Day+17+-+Movie+App/054+Movies+UI+Layout.mp4
+/* From Video Tutorial: https: //archive.org/details/50-projects-in-50-days-html-css-java-script_202207/18+Day+17+-+Movie+App/054+Movies+UI+Layout.mp4
 Videos 53 - 56
 Body - Movie Cards */
 
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.movie {
+    width: 300px;
+    margin: 1rem;
+    background-color: #82b0d9;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
 
- .main {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
- }
+.movie img {
+    width: 100%;
+}
 
- .movie {
-     width: 300px;
-     margin: 1rem;
-     background-color: #82b0d9;
-     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-     position: relative;
-     overflow: hidden;
-     border-radius: 10px;
- }
+.movie-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
 
- .movie img {
-     width: 100%;
- }
+.movie-info h3 {
+    margin-top: 0;
+    font-family: Itim, sans-serif;
+    font-size: 30px;
+}
 
- .movie-info {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     padding: 0.5rem 1rem 1rem;
-     letter-spacing: 0.5px;
- }
+.overview p {
+    font-family: Delius, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
 
- .movie-info h3 {
-     margin-top: 0;
-     font-family: Itim, sans-serif;
-     font-size: 30px;
- }
+.overview h3 {
+    font-family: Itim, sans-serif;
+    font-size: 26px;
+}
 
- .overview p {
-     font-family: Delius, sans-serif;
-     font-size: 18px;
-     font-weight: bold;
- }
+.movie-info span {
+    background-color: #e0e0e0;
+    padding: 0.25rem 0.5rem;
+    border-radius: 10px;
+    font-size: 22px;
+    font-family: Kalam, sans-serif;
+    font-weight: 700;
+}
 
- .overview h3 {
-     font-family: Itim, sans-serif;
-     font-size: 26px;
- }
+.movie-info span.green {
+    color: #729c44;
+}
 
- .movie-info span {
-     background-color: #e0e0e0;
-     padding: 0.25rem 0.5rem;
-     border-radius: 10px;
-     font-size: 22px;
-     font-family: Kalam, sans-serif;
-     font-weight: 700;
- }
+.movie-info span.orange {
+    color: #edad45;
+}
 
- .movie-info span.green {
-     color: #729c44;
- }
+.movie-info span.red {
+    color: #e84855;
+}
 
- .movie-info span.orange {
-     color: #edad45;
- }
+.overview {
+    background-color: #82b0d9;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
 
- .movie-info span.red {
-     color: #e84855;
- }
+.movie:hover .overview {
+    transform: translateY(0);
+}
 
- .overview {
-     background-color: #82b0d9;
-     padding: 2rem;
-     position: absolute;
-     top: 0;
-     bottom: 0;
-     left: 0;
-     max-height: 100%;
-     transform: translateY(101%);
-     transition: transform 0.3s ease-in;
- }
+.no-result {
+    text-transform: uppercase;
+    font-family: itim, sans-serif;
+    font-size: 26px;
+}
 
- .movie:hover .overview {
-     transform: translateY(0);
- }
+/* Genre Button styling. Adapted from video tutorial: */
 
- .no-result {
-     text-transform: uppercase;
-     font-family: itim, sans-serif;
-     font-size: 26px;
- }
+#tags {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
 
- /* Genre Button styling. Adapted from video tutorial: */
+.tag {
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 5px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: itim, sans-serif;
+    font-size: 16px;
+    border: 1px solid black;
+}
 
- #tags {
-     width: 90%;
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     align-items: center;
-     margin: 10px auto;
- }
+.tag.highlight {
+    background-color: #82b0d9;
+}
 
- .tag {
-     padding: 10px 20px;
-     border-radius: 50px;
-     margin: 5px;
-     display: inline-block;
-     text-transform: uppercase;
-     font-family: itim, sans-serif;
-     font-size: 16px;
-     border: 1px solid black;
- }
+/* Footer */
 
- .tag.highlight {
-     background-color: #82b0d9;
- }
+footer {
+    height: 10vh;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.social-container {
+    display: flex;
+}
 
- /* Footer */
+.social-icon {
+    display: flex;
+}
 
- footer {
-     height: 7vh;
-     margin: 0;
-     position: fixed;
-     bottom: 0;
-     width: 100%;
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
+/* Taken from Milestone 1 */
+.social-links li {
+    text-align: center;
+    padding: 1rem;
+}
 
- .social-container {
-     display: flex;
- }
+.social-links li a i {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 6px;
+    color: rgba(202, 83, 147, 0.5);
+    background-color: #82b0d9;
+    /*flex added to links themselves, from tutor support*/
+    /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* From Resume project */
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
 
- .social-icon {
-     display: flex;
- }
+.social-links li a i:hover {
+    color: #82b0d9;
+    background-color: rgba(202, 83, 147, 0.5);
+}
 
- /* Taken from Milestone 1 */
- .social-links li {
-     text-align: center;
-     padding: 1rem;
+/* Contact Form */
 
- }
+.contact-heading {
+    font-family: Kalam, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 5px 0 5px 20px;
+    margin: 0;
+}
 
- .social-links li a i {
-     width: 35px;
-     height: 35px;
-     border-radius: 50%;
-     font-size: 20px;
-     line-height: 6px;
-     color: rgba(202, 83, 147, 0.5);
-     background-color: #82b0d9;
-     /*flex added to links themselves, from tutor support*/
-     /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-wrap: nowrap;
-     /* From Resume project */
-     transition: all 0.35s ease-in-out;
-     -moz-transition: all 0.35s ease-in-out;
-     -webkit-transition: all 0.35s ease-in-out;
-     -o-transition: all 0.35s ease-in-out;
- }
+.contact-main {
+    margin-bottom: 10vh;
+    height: 100vh;
+}
 
- .social-links li a i:hover {
-     color: #82b0d9;
-     background-color: rgba(202, 83, 147, 0.5);
- }
+.contact-form {
+    text-transform: uppercase;
+    font-family: Delius, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-style: bold;
+
+}
+
+#contact-input {
+    margin-right: 20px;
+}
+
+.c-form {
+
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    border-radius: 10px;
+}
