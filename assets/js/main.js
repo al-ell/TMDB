@@ -9,9 +9,9 @@ const apiUrl =
     "https://api.themoviedb.org/3/genre/10751/movies?api_key=2fcc9b1d9695840cb0066635e69b01b2&language=en&include_adult=false&sort_by=popularity.desc";
 // Movie poster file path:
 const imgPath = "https://image.tmdb.org/t/p/w500";
+// Search bar with successful genre filtering (not supported in search API) https://www.themoviedb.org/talk/6441194ffcec2e0439d8d361:
 // Search bar endpoint:
-const searchAPI =
-    'https://api.themoviedb.org/3/search/movie?certification_country=US&certification.lte=G&with_genres=10751&include_adult=false&sort_by=popularity.desc&api_key=2fcc9b1d9695840cb0066635e69b01b2&query="';
+const searchAPI = 'https://api.themoviedb.org/3/discover/movie?api_key=2fcc9b1d9695840cb0066635e69b01b2&with_genres=10751&include_adult=false&sort_by=popularity.desc&with_text_query="';
 
 // Tutorial to add genre buttons : https://www.youtube.com/watch?v=_KzimS9fcM0
 const genreUrl = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=2fcc9b1d9695840cb0066635e69b01b2';
@@ -35,20 +35,12 @@ const genre = [
         name: "Comedy",
     },
     {
-        id: 80,
-        name: "Crime",
-    },
-    {
         id: 99,
         name: "Documentary",
     },
     {
         id: 18,
         name: "Drama",
-    },
-    {
-        id: 10751,
-        name: "Family",
     },
     {
         id: 14,
@@ -64,31 +56,15 @@ const genre = [
     },
     {
         id: 10402,
-        name: "Music",
+        name: "Musical",
     },
     {
         id: 9648,
         name: "Mystery",
     },
     {
-        id: 10749,
-        name: "Romance",
-    },
-    {
         id: 878,
-        name: "Science Fiction",
-    },
-    {
-        id: 10770,
-        name: "TV Movie",
-    },
-    {
-        id: 53,
-        name: "Thriller",
-    },
-    {
-        id: 10752,
-        name: "War",
+        name: "Sci-Fi",
     },
     {
         id: 37,

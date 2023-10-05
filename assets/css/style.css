@@ -94,9 +94,12 @@
 Videos 53 - 56
 Body - Movie Cards */
 
+
+
  .main {
      display: flex;
      flex-wrap: wrap;
+     justify-content: center;
  }
 
  .movie {
@@ -184,7 +187,7 @@ Body - Movie Cards */
  /* Genre Button styling. Adapted from video tutorial: */
 
  #tags {
-     width: 80%;
+     width: 90%;
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
@@ -199,7 +202,7 @@ Body - Movie Cards */
      display: inline-block;
      text-transform: uppercase;
      font-family: itim, sans-serif;
-     font-size: 18px;
+     font-size: 16px;
      border: 1px solid black;
  }
 
