@@ -196,7 +196,7 @@ This allowd me to find the correct genre number to filter family films.
 [TMDB advanced filtering](https://developer.themoviedb.org/reference/discover-movie) -
 Allows experiments with genre, classification and language options for homepage results.
 
-[To filter search results](https://developer.themoviedb.org/reference/search-movie)
+[To filter search results](https://www.themoviedb.org/talk/6441194ffcec2e0439d8d361)
 
 ### Error Handling
 

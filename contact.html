@@ -57,19 +57,6 @@
             </div>
           </div>
           </div>
-          <div>
-            <form id="form">
-              <input
-                type="text"
-                id="search"
-                class="search"
-                placeholder="Search.."
-              />
-            </form>
-            <button class="btn btn-success submit-btn" type="submit">
-              Search
-            </button>
-          </div>
         </nav>
       </div>
       <div class="logo-container">
@@ -78,14 +65,20 @@
         </h1>
       </div>
     </header>
-    <main class="main">
-      <!-- From Video Tutorial: https://www.youtube.com/watch?v=_KzimS9fcM0 -->
-      <div id="tags"></div>
-      <br />
-      <!--  From Video Tutorial: https://archive.org/details/50-projects-in-50-days-html-css-java-script_202207/18+Day+17+-+Movie+App/054+Movies+UI+Layout.mp4
-                Videos 53 - 56 -->
-      <div class="main" id="main"></div>
-    </main>
+    <section class="contact-main container-fluid center-form">
+        <!-- Bootstrap Form Components: https://getbootstrap.com/docs/4.5/components/forms/#horizontal-form -->
+    <form class="contact-form" id="contact-form" onsubmit="return sendMail(this);">
+        <div class="form-group">
+            <label for="name" id="subject-label">Name:</label>
+            <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+            <label for="emailaddress">Email Address:</label>
+            <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="name@example.com" required>
+            <label for="contact-input">Message:</label>
+            <textarea class="form-control" name="message" id="contact-input" rows="6" placeholder="Hi..." required></textarea>
+        </div>
+    <button type="submit" class="btn btn-outline-success">Send</button>
+    </form>   
+    </section>
     <!--Social links - code taken from Milestone 1-->
     <footer class="footer">
       <div class="social-container">
@@ -123,6 +116,13 @@
       crossorigin="anonymous"
     ></script>
     <!--Javascript page-->
-    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/contact.js"></script>
   </body>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("7Tw1M_-WPV7NU2alU");
+        })();
+    </script>
 </html>
