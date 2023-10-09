@@ -1,126 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Itim&family=Kalam:wght@300;400;700&display=swap"
-        rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius&family=Itim&family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>CINIkids</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <!--Boostrap Navbar Components-->
-        <div class="nav-container conatiner-fluid no-gutters flex-container"></div>
-        <nav class="navbar navbar-expand-lg sticky-top">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
-                    class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse nav-links" id="navbarNav">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item menuitem" id="nav-home">
-                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item menuitem" id="nav-contact">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+      <!-- FlexBox Nav: https://www.youtube.com/watch?v=2plKBskaKfY&list=PL4cUxeGkcC9i3FXJSUfmsNOx8E7u6UuhG&index=7 -->
+      <div class="wrapper nav-container">
+        <nav class="sticky-top">
+          <ul class="nav-links">
+            <li class="nav-item menuitem" id="nav-home">
+              <a class="nav-link" href="index.html"
+                >Home<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item menuitem" id="nav-contact">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </nav>
-        </div>
-        <div class="logo-container">
-            <h1 id="logo">
-                <span id="logo1">CINI</span><span id="logo2">kids</span>
-            </h1>
-        </div>
+      </div>
+      <div class="logo-container">
+        <h1 id="logo">
+          <span id="logo1">CINI</span><span id="logo2">kids</span>
+        </h1>
+      </div>
     </header>
     <section class="contact-main container-fluid">
-        <div class="contact-heading justify-content-center">
-            <h2 class="contact-heading">Send a message:</h2>
-        </div>
-        <!-- Bootstrap Form Components: https://getbootstrap.com/docs/4.5/components/forms/#horizontal-form -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10">
-                    <form class="contact-form" id="contact-form" onsubmit="return sendMail(this);">
-                        <div class="form-row">
-                            <div class="form-group col-md-5">
-                                <label for="name" id="subject-label">Name:</label>
-                                <input type="text" name="name" class="c-form" id="name" placeholder="Name" required>
-                            </div>
-                            <div class="form-group col-md-5">
-                                <label for="emailaddress">Email Address:</label>
-                                <input type="text" name="emailaddress" class="c-form" id="emailaddress"
-                                    placeholder="name@example.com" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-input">Message:</label>
-                            <textarea class="c-form" name="message" id="contact-input" rows="8" placeholder="Hi..."
-                                required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn contact-btn">Send</button>
-                        </div>
-                    </form>
+      <div class="contact-heading justify-content-center">
+        <h2 class="contact-heading">Send a message:</h2>
+      </div>
+      <!-- Bootstrap Form Components: https://getbootstrap.com/docs/4.5/components/forms/#horizontal-form -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <form
+              class="contact-form"
+              id="contact-form"
+              onsubmit="return sendMail(this);"
+            >
+              <div class="form-row">
+                <div class="form-group col-md-5">
+                  <label for="name" id="subject-label">Name:</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="c-form"
+                    id="name"
+                    placeholder="Name"
+                    required
+                  />
                 </div>
-            </div>
+                <div class="form-group col-md-5">
+                  <label for="emailaddress">Email Address:</label>
+                  <input
+                    type="text"
+                    name="emailaddress"
+                    class="c-form"
+                    id="emailaddress"
+                    placeholder="name@example.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-input">Message:</label>
+                <textarea
+                  class="c-form"
+                  name="message"
+                  id="contact-input"
+                  rows="8"
+                  placeholder="Hi..."
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn contact-btn">Send</button>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
     <!--Social links - code taken from Milestone 1-->
     <footer class="footer">
-        <div class="social-container">
-            <ul class="list-inline social-links">
-                <li class="list-inline-item social-icon">
-                    <a target="_blank" href="https://www.tiktok.com/en//">
-                        <i class="fa-solid fa-tiktok" aria-hidden="true"></i>
-                        <span class="sr-only">TikTok</span>
-                    </a>
-                </li>
-                <li class="list-inline-item social-icon">
-                    <a target="_blank" href="https://www.youtube.com/">
-                        <i class="fa fa-youtube" aria-hidden="true"></i>
-                        <span class="sr-only">Youtube</span>
-                    </a>
-                </li>
-                <li class="list-inline-item social-icon">
-                    <a target="_blank" href="https://en-gb.facebook.com//">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span>
-                    </a>
-                </li>
-                <li class="list-inline-item social-icon">
-                    <a target="_blank" href="https://www.instagram.com/">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <div class="social-container">
+        <ul class="list-inline social-links">
+          <li class="list-inline-item social-icon">
+            <a target="_blank" href="https://www.tiktok.com/en//">
+              <i class="fa-solid fa-tiktok" aria-hidden="true"></i>
+              <span class="sr-only">TikTok</span>
+            </a>
+          </li>
+          <li class="list-inline-item social-icon">
+            <a target="_blank" href="https://www.youtube.com/">
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+              <span class="sr-only">Youtube</span>
+            </a>
+          </li>
+          <li class="list-inline-item social-icon">
+            <a target="_blank" href="https://en-gb.facebook.com//">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <span class="sr-only">Facebook</span>
+            </a>
+          </li>
+          <li class="list-inline-item social-icon">
+            <a target="_blank" href="https://www.instagram.com/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <span class="sr-only">Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
     <!--Fontawesome CDN-->
-    <script src="https://kit.fontawesome.com/fe32e32a81.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/fe32e32a81.js"
+      crossorigin="anonymous"
+    ></script>
     <!--Javascript page-->
     <script src="/assets/js/contact.js"></script>
-</body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
+  </body>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
     (function () {
-        emailjs.init("7Tw1M_-WPV7NU2alU");
+      emailjs.init("7Tw1M_-WPV7NU2alU");
     })();
-</script>
-
+  </script>
 </html>

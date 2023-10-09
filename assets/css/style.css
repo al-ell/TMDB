@@ -7,32 +7,31 @@
 
 .contact-main,
 .tag,
-
 body,
 .main {
-    background-color: #765674;
+  background-color: #765674;
 }
 
 #logo,
 header,
-nav-container,
+nav,
 footer {
-    background-color: #D0D8DC;
+  background-color: #d0d8dc;
 }
 
 .contact-main {
-    background-color: #8ECCB1;
+  background-color: #8eccb1;
 }
 
 .form-row input,
 textarea {
-    background-color: #d0d8dc;
+  background-color: #d0d8dc;
 }
 
 /* Special Margins & Paddings */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .contact-main,
@@ -41,54 +40,32 @@ textarea {
 header,
 body,
 #tags {
-    margin: 0;
+  margin: 0;
 }
 
 /* Header */
 
-.nav-container {
-    height: 10vh;
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
 }
 
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding-bottom: 20px;
-    padding-top: 0;
+nav ul {
+  list-style-type: none;
 }
 
-#logo {
-    font-family: Kalam, sans-serif;
-    font-weight: 700;
-    font-size: 12vh;
-    letter-spacing: 2px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 20px;
-    height: 14vh;
-}
-
-#logo1 {
-    color: #DA1B2B;
-}
-
-#logo2 {
-    color: #5D8038;
-}
-
-#form {
-    padding: 5px 10px 0 0;
-    font-size: 18px;
-    display: inline-flex;
+nav a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 10px;
 }
 
 .submit-btn {
     text-transform: uppercase;
     font-family: itim, sans-serif;
     font-size: 18px;
-    background-color: #5D8038;
+    background-color: #5d8038;
 }
 
 .submit-btn:hover {
@@ -99,12 +76,7 @@ body,
     min-width: 20px;
     text-transform: uppercase;
     font-size: 18px;
-}
-
-.nav-container {
-    display: contents;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    border-radius: 10px;
 }
 
 .nav-links {
@@ -114,18 +86,38 @@ body,
     letter-spacing: 2px;
 }
 
-.nav-button,
-.form {
-    display: flex;
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 20px;
+  padding-top: 0;
 }
 
+#logo {
+  font-family: Kalam, sans-serif;
+  font-weight: 700;
+  font-size: 12vh;
+  letter-spacing: 2px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  height: 14vh;
+}
 
-.navbar-expand-lg,
-.navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;
-    justify-content: space-between;
-    align-items: flex-start;
+#logo1 {
+  color: #da1b2b;
+}
+
+#logo2 {
+  color: #5d8038;
+}
+
+#form {
+  padding: 5px 10px 0 0;
+  font-size: 18px;
+  display: inline-flex;
 }
 
 /* From Video Tutorial: https: //archive.org/details/50-projects-in-50-days-html-css-java-script_202207/18+Day+17+-+Movie+App/054+Movies+UI+Layout.mp4
@@ -133,216 +125,227 @@ Videos 53 - 56
 Body - Movie Cards */
 
 .main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .movie {
-    width: 300px;
-    margin: 1rem;
-    background-color: #8ECCB1;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
+  width: 300px;
+  margin: 1rem;
+  background-color: #8eccb1;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .movie img {
-    width: 100%;
+  width: 100%;
 }
 
 .movie-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 1rem 1rem;
-    letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
 }
 
 .movie-info h3 {
-    margin-top: 0;
-    font-family: Itim, sans-serif;
-    font-size: 30px;
+  margin-top: 0;
+  font-family: Itim, sans-serif;
+  font-size: 30px;
 }
 
 .overview p {
-    font-family: Delius, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
+  font-family: Delius, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .overview h3 {
-    font-family: Itim, sans-serif;
-    font-size: 26px;
+  font-family: Itim, sans-serif;
+  font-size: 26px;
 }
 
 .movie-info span {
-    background-color: #d0d8dc;
-    padding: 0.25rem 0.5rem;
-    border-radius: 10px;
-    font-size: 22px;
-    font-family: Kalam, sans-serif;
-    font-weight: 700;
+  background-color: #d0d8dc;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  font-size: 22px;
+  font-family: Kalam, sans-serif;
+  font-weight: 700;
 }
 
 .movie-info span.green {
-    color: #5D8038;
+  color: #5d8038;
 }
 
 .movie-info span.orange {
-    color: #edad45;
+  color: #edad45;
 }
 
 .movie-info span.red {
-    color: #DA1B2B;
+  color: #da1b2b;
 }
 
 .overview {
-    background-color: #8ECCB1;
-    padding: 2rem;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    max-height: 100%;
-    transform: translateY(101%);
-    transition: transform 0.3s ease-in;
+  background-color: #8eccb1;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
 }
 
 .movie:hover .overview {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .no-result {
-    text-transform: uppercase;
-    font-family: itim, sans-serif;
-    font-size: 26px;
+  text-transform: uppercase;
+  font-family: itim, sans-serif;
+  font-size: 26px;
 }
 
 /* Genre Button styling. Adapted from video tutorial: */
 
 #tags {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto;
-    padding-top: 10px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  padding-top: 10px;
 }
 
 .tag {
-    padding: 10px 20px;
-    border-radius: 50px;
-    margin: 5px;
-    display: inline-block;
-    text-transform: uppercase;
-    font-family: itim, sans-serif;
-    font-size: 16px;
-    background-color: #8ECCB1;
-    border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin: 5px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: itim, sans-serif;
+  font-size: 16px;
+  background-color: #8eccb1;
+  border: 1px solid black;
 }
 
 .tag.highlight {
-    background-color: #D0D8DC;
+  background-color: #d0d8dc;
 }
 
 /* Footer */
 
 footer {
-    height: 10vh;
-    margin: 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 10vh;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-container {
-    display: flex;
+  display: flex;
 }
 
 .social-icon {
-    display: flex;
+  display: flex;
 }
 
 /* Taken from Milestone 1 */
 .social-links li {
-    text-align: center;
-    padding: 1rem;
+  text-align: center;
+  padding: 1rem;
 }
 
 .social-links li a i {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    font-size: 20px;
-    line-height: 6px;
-    color: #765674;
-    background-color: #8ECCB1;
-    /*flex added to links themselves, from tutor support*/
-    /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    /* From Resume project */
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 6px;
+  color: #765674;
+  background-color: #8eccb1;
+  /*flex added to links themselves, from tutor support*/
+  /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  /* From Resume project */
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
 }
 
 .social-links li a i:hover {
-    color: #D0D8DC;
-    background-color: #765674;
+  color: #d0d8dc;
+  background-color: #765674;
 }
 
 /* Contact Form */
 
 .contact-heading {
-    font-family: Kalam, sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 24px;
-    padding: 10px 0 5px 25px;
-    margin: 0;
+  font-family: Kalam, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding: 10px 0 5px 25px;
+  margin: 0;
 }
 
 .contact-main {
-    margin-bottom: 10vh;
-    height: 100vh;
+  margin-bottom: 10vh;
+  height: 100vh;
 }
 
 .contact-form {
-    text-transform: uppercase;
-    font-family: Delius, sans-serif;
-    font-size: 16px;
-    letter-spacing: 2px;
-    font-style: bold;
-
+  text-transform: uppercase;
+  font-family: Delius, sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-style: bold;
 }
 
 .contact-btn {
-    background-color: #765674;
-    color: #D0D8DC;
-    border-radius: 50%;
-    text-transform: uppercase;
-    padding: 5px;
-    z-index: 99;
+  background-color: #765674;
+  color: #d0d8dc;
+  border-radius: 50%;
+  text-transform: uppercase;
+  padding: 5px;
+  z-index: 99;
 }
 
 #contact-input {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .c-form {
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+  border-radius: 10px;
+}
 
-    padding: 10px;
-    margin: 5px;
-    width: 100%;
-    border-radius: 10px;
+/* @Media Queries */
+
+@media screen and (min-width: 768px) {
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav li {
+    flex: 1 1 0;
+  }
 }
