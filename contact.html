@@ -25,7 +25,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>CINIkids</title>
   </head>
-
   <body>
     <header>
       <!-- FlexBox Nav: https://www.youtube.com/watch?v=2plKBskaKfY&list=PL4cUxeGkcC9i3FXJSUfmsNOx8E7u6UuhG&index=7 -->
@@ -95,7 +94,8 @@
                   rows="8"
                   placeholder="Hi..."
                   required
-                ></textarea>
+                >
+                </textarea>
               </div>
               <div class="form-group">
                 <button type="submit" class="btn contact-btn">Send</button>
@@ -143,14 +143,11 @@
     ></script>
     <!--Javascript page-->
     <script src="/assets/js/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("7Tw1M_-WPV7NU2alU");
+      })();
+    </script>
   </body>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-  ></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("7Tw1M_-WPV7NU2alU");
-    })();
-  </script>
 </html>

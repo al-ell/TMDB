@@ -1,9 +1,4 @@
-/*  for movie cards
-
-{
-    background-color: #82b0d9;
-
-} */
+/* Colors */
 
 .contact-main,
 .tag,
@@ -35,6 +30,7 @@ textarea {
   box-sizing: border-box;
 }
 
+.error-container,
 .contact-main,
 .nav-container,
 .logo-container,
@@ -354,7 +350,7 @@ footer {
   font-family: Delius, sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
-  font-style: bold;
+  font-weight: bold;
 }
 
 .contact-btn {
@@ -423,7 +419,6 @@ footer {
     padding-bottom: 20px;
 
 }
-
 
 .error-link {
     text-decoration: none;
