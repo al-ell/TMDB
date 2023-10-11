@@ -76,8 +76,21 @@ const genre = [
 const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
-const formBtn = document.getElementById("submit-btn"); // to add event listener
+const searchBtn = document.getElementById("submit-btn"); // to add event listener
 const tagsEl = document.getElementById("tags");
+
+
+// Pagination walkthrough: https://www.youtube.com/watch?v=Oruem4VgRCs
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
+const current = document.getElementById('current');
+
+var currentPage = 1;
+var nextPage = 2;
+var prevPage = 3;
+var lastUrl = '';
+var totalPages = 20;
+
 
 var selectedGenre = [];
 setGenre();
@@ -140,11 +153,30 @@ function highlightSelection() {
 // updated to arrow function & error catching from: https://www.youtube.com/watch?v=_KzimS9fcM0
 getMovies(apiUrl);
 function getMovies(url) {
+    lastUrl = url;
     fetch(url)
         .then((res) => res.json())
         .then((data) => {
             if (data.results.length !== 0) {
                 showMovies(data.results);
+
+                currentPage = data.page;
+                nextPage = currentPage + 1;
+                prevPage = currentPage - 1;
+                totalPages = data.total_pages;
+
+                current.innerText = currentPage;
+                if (currentPage <= 0) {
+                    prev.classList.add('disabled');
+                    next.classList.remove('disabled');
+                } else if (currentPage >= totalPages) {
+                    prev.classList.remove('disabled');
+                    next.classList.add('disabled');
+                } else {
+                    prev.classList.remove('disabled');
+                    next.classList.remove('disabled');
+                }
+                tagsEl.scrollIntoView({ behavior: 'smooth' });
             } else {
                 main.innerHTML = `<h2 class="no-reusult">Sorry!! No results found... Please try again</h2>`;
             }
@@ -203,5 +235,49 @@ form.addEventListener("submit", (e) => {
     }
 });
 
-// Not in tutorial but I will add click function to search bar
-//formBtn.addEventListener('click', );
+// searchbar button function added:
+searchBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const searchTerm = search.value;
+    selectedGenre = [];
+    highlightSelection();
+    if (searchTerm && searchTerm !== "") {
+        getMovies(searchAPI + searchTerm);
+
+        search.value = "";
+    } else {
+        window.location.reload();
+    }
+});
+
+
+// Pagination walkthrough: https://www.youtube.com/watch?v=Oruem4VgRCs
+prev.addEventListener('click', () => {
+    if (prevPage > 0) {
+        pageCall(prevPage);
+    }
+});
+
+next.addEventListener('click', () => {
+    if (nextPage <= totalPages) {
+        pageCall(nextPage);
+    }
+});
+
+function pageCall(page) {
+    let urlSplit = lastUrl.split('?');
+    let queryParams = urlSplit[1].split('&');
+    let key = queryParams[queryParams.length - 1].split('=');
+    if (key[0] !== 'page') {
+        let url = lastUrl + '&page=+page';
+        getMovies(url);
+    } else {
+        key[1] = page.toString();
+        let a = key.join('=');
+        queryParams[queryParams.length - 1] = a;
+        let b = queryParams.join('&');
+        let url = urlSplit[0] + '?' + b;
+        getMovies(url);
+    }
+}

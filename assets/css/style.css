@@ -240,6 +240,47 @@ Body - Movie Cards */
   background-color: #d0d8dc;
 }
 
+/* Pagination */
+
+.pagnation {
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 11vh;
+    margin-top: 30px;
+}
+
+.page {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.page .disabled {
+    cursor: not-allowed;
+    color: grey;
+
+}
+
+.current {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #d0d8dc;
+    font-size: 20px;
+    font-family: Kalam, sans-serif;
+    font-weight: 700;
+}
+
+#prev,
+#next {
+    font-family: Delius, sans-serif;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
 /* Footer */
 
 footer {
